@@ -2,239 +2,249 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guia turistico</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia turistico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
+<header>
     <nav class="navigation ">
-      <div class="flex-center-logo">
-        <a href="index.php"><img src="/logo.png" width="100px" height="100px"></a>
-        <a href="index.php" class="logo">Pontos turisticos</a>
-      </div>
-      <div>
-        <ul class="nav-menu">
-          <form action="produtoBusca.php" method="POST" style="display:flex;height:25px;gap:10px;align-items:center">
-          </form>
-          <li class="nav-item"><a href="index.php">Home</a></li>
-          <li class="nav-item"><a href="produtos.php">Contato</a></li>
-          <li class="nav-item"><a href="loginLojista.php">Login/Cadastro</a></li>
-        </ul>
-      </div>
+        <div class="flex-center-logo">
+            <a href="index.php"><img src="/logo.png" width="100px" height="100px"></a>
+            <a href="index.php" class="logo">Pontos turisticos</a>
+        </div>
+        <div>
+            <ul class="nav-menu">
+                <form action="produtoBusca.php" method="POST"
+                      style="display:flex;height:25px;gap:10px;align-items:center">
+                </form>
+                <li class="nav-item"><a href="home.html">Home</a></li>
+                <li class="nav-item"><a href="contato.html">Contato</a></li>
+                <li class="nav-item"><a href="loginLojista.php">Login/Cadastro</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
+</header>
 
 
-
-  <div class=".container-fluid p-5 p-3 mb-2 bg-light text-dark">
+<div class=".container-fluid p-5 p-3 mb-2 bg-light text-dark">
     <div class="">
-      <h1>Bem vindo!</h1>
-      <h4>Pontos turísticos próximos a Curitiba</h4>
+        <h1>Bem vindo!</h1>
+        <h4>Pontos turísticos próximos a Curitiba</h4>
     </div>
     <div class="row">
-      <div class="col">
-        <div class="card p-4" style="width: 17rem;justify-content: center;">
-          <h4 class="card-title">Paranagua</h4>
-          <img width="10px" class="card-img-top" height="300px" style="object-fit: scale-down; " src="/Morretes.jpg"
-            alt="Card image cap">
-          <div><b>Distância de Curitiba:</b> 84 km</div>
-          <div class="card-body">
-            <h5 class="card-title"
-              style='display: -webkit-box;height:2.5em;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;'>
-            </h5>
-            <div style="display:flex;flex-direction: column-reverse;flex-wrap: wrap;justify-content: center;gap:10px">
-              <button type="button" class="btn btn-primary" id="btn-confirm" data-bs-toggle="modal"
-                data-bs-target="#JanelaModal">
-                <p>Ver mais</p>
-              </button>
-              <div id="JanelaModal" class="modal fade">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Informações</h4>
-                    </div>
+        <div class="col">
+            <div class="card p-4" style="width: 17rem;justify-content: center;">
+                <h4 class="card-title">Paranaguá</h4>
+                <img width="10px" class="card-img-top" height="300px" style="object-fit: scale-down; "
+                     src="/Morretes.jpg"
+                     alt="Card image cap">
+                <div><b>Distância de Curitiba:</b> 84 km</div>
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style='display: -webkit-box;height:2.5em;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;'>
+                    </h5>
+                    <div style="display:flex;flex-direction: column-reverse;flex-wrap: wrap;justify-content: center;gap:10px">
+                        <button type="button" class="btn btn-primary" id="btn-confirm" data-bs-toggle="modal"
+                                data-bs-target="#JanelaModal">
+                            <p>Ver mais</p>
+                        </button>
+                        <div id="JanelaModal" class="modal fade">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Informações</h4>
+                                    </div>
 
-                    <div class="modal-body">
-                      <div><b>Morretes</b></div>
-                      <div><b>Horario de funcionamento:</b> Dia todo</div>
-                      <div><b>Link:</b> http://sitegenerico.com.br</div>
-                      <div>
-                        <b>Descrição:</b>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo
-                      </div>
-                    </div>
+                                    <div class="modal-body">
+                                        <div><b>Morretes</b></div>
+                                        <div><b>Horario de funcionamento:</b> Dia todo</div>
+                                        <div><b>Link:</b> http://sitegenerico.com.br</div>
+                                        <div>
+                                            <b>Descrição:</b>Pellentesque habitant morbi tristique senectus et netus et
+                                            malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+                                            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+                                            semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo
+                                        </div>
+                                    </div>
 
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
+
         </div>
+        <div class="col">
+            <div class="card p-4" style="width: 17rem;justify-content: center;">
+                <h4 class="card-title">Morretes</h4>
+                <img width="10px" class="card-img-top" height="300px" style="object-fit: scale-down; "
+                     src="/Morretes.jpg"
+                     alt="Card image cap">
+                <div><b>Distância:</b> 68,5 km</div>
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style='display: -webkit-box;height:2.5em;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;'>
+                    </h5>
+                    <div style="display:flex;flex-direction: column-reverse;flex-wrap: wrap;justify-content: center;gap:10px">
+                        <button type="button" class="btn btn-primary" id="btn-confirm" data-bs-toggle="modal"
+                                data-bs-target="#JanelaModal">
+                            <p>Ver mais</p>
+                        </button>
+                        <div id="JanelaModal" class="modal fade">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Informações</h4>
+                                    </div>
 
-      </div>
-      <div class="col">
-        <div class="card p-4" style="width: 17rem;justify-content: center;">
-          <h4 class="card-title">Morretes</h4>
-          <img width="10px" class="card-img-top" height="300px" style="object-fit: scale-down; " src="/Morretes.jpg"
-            alt="Card image cap">
-          <div><b>Distância:</b> 68,5 km</div>
-          <div class="card-body">
-            <h5 class="card-title"
-              style='display: -webkit-box;height:2.5em;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;'>
-            </h5>
-            <div style="display:flex;flex-direction: column-reverse;flex-wrap: wrap;justify-content: center;gap:10px">
-              <button type="button" class="btn btn-primary" id="btn-confirm" data-bs-toggle="modal"
-                data-bs-target="#JanelaModal">
-                <p>Ver mais</p>
-              </button>
-              <div id="JanelaModal" class="modal fade">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Informações</h4>
-                    </div>
+                                    <div class="modal-body">
+                                        <div> Morretes</div>
+                                        <div><b>Horario de funcionamento:</b> Dia todo</div>
+                                        <div><b>Link:</b> http://sitegenerico.com.br</div>
+                                        <div>
+                                            <b>Descrição</b>JAOIJSFOIASFOIASJFIOSAFIOHASOICHASIOCUHASOIDHSAIOFHASOIFHASOIFHASOICHASOIVHASOIFHASOIFHOFOASI
+                                        </div>
+                                    </div>
 
-                    <div class="modal-body">
-                      <div> Morretes</div>
-                      <div><b>Horario de funcionamento:</b> Dia todo</div>
-                      <div><b>Link:</b> http://sitegenerico.com.br</div>
-                      <div>
-                        <b>Descrição</b>JAOIJSFOIASFOIASJFIOSAFIOHASOICHASIOCUHASOIDHSAIOFHASOIFHASOIFHASOICHASOIVHASOIFHASOIFHOFOASI
-                      </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card p-4" style="width: 17rem;justify-content: center;">
-          <h4 class="card-title">Ponta Grossa</h4>
-          <img width="10px" class="card-img-top" height="300px" style="object-fit: scale-down; " src="/Ponta Grossa.jpg"
-            alt="Card image cap">
-          <div><b>Distância:</b> </div>
-          <div class="card-body">
-            <h5 class="card-title"
-              style='display: -webkit-box;height:2.5em;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;'>
-            </h5>
-            <div style="display:flex;flex-direction: column-reverse;flex-wrap: wrap;justify-content: center;gap:10px">
-              <button type="button" class="btn btn-primary" id="btn-confirm" data-bs-toggle="modal"
-                data-bs-target="#JanelaModal">
-                <p>Ver mais</p>
-              </button>
-              <div id="JanelaModal" class="modal fade">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Informações</h4>
-                    </div>
+        <div class="col">
+            <div class="card p-4" style="width: 17rem;justify-content: center;">
+                <h4 class="card-title">Ponta Grossa</h4>
+                <img width="10px" class="card-img-top" height="300px" style="object-fit: scale-down; "
+                     src="/Ponta Grossa.jpg"
+                     alt="Card image cap">
+                <div><b>Distância:</b></div>
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style='display: -webkit-box;height:2.5em;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;'>
+                    </h5>
+                    <div style="display:flex;flex-direction: column-reverse;flex-wrap: wrap;justify-content: center;gap:10px">
+                        <button type="button" class="btn btn-primary" id="btn-confirm" data-bs-toggle="modal"
+                                data-bs-target="#JanelaModal">
+                            <p>Ver mais</p>
+                        </button>
+                        <div id="JanelaModal" class="modal fade">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Informações</h4>
+                                    </div>
 
-                    <div class="modal-body">
-                      <div> Morretes</div>
-                      <div><b>Horario de funcionamento:</b> Dia todo</div>
-                      <div><b>Link:</b> http://sitegenerico.com.br</div>
-                      <div>
-                        <b>Descrição</b>JAOIJSFOIASFOIASJFIOSAFIOHASOICHASIOCUHASOIDHSAIOFHASOIFHASOIFHASOICHASOIVHASOIFHASOIFHOFOASI
-                      </div>
-                    </div>
+                                    <div class="modal-body">
+                                        <div> Morretes</div>
+                                        <div><b>Horario de funcionamento:</b> Dia todo</div>
+                                        <div><b>Link:</b> http://sitegenerico.com.br</div>
+                                        <div>
+                                            <b>Descrição</b>JAOIJSFOIASFOIASJFIOSAFIOHASOICHASIOCUHASOIDHSAIOFHASOIFHASOIFHASOICHASOIVHASOIFHASOIFHOFOASI
+                                        </div>
+                                    </div>
 
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
+
+
         </div>
+        <div class="col">
+            <div class="card p-4" style="width: 17rem;justify-content: center;">
+                <h4 class="card-title">Estrada da Graciosa</h4>
+                <img width="10px" class="card-img-top" height="300px" style="object-fit: scale-down; "
+                     src="/Morretes.jpg"
+                     alt="Card image cap">
+                <div><b>Distância:</b> 68,5 km</div>
+                <div class="card-body">
+                    <h5 class="card-title"
+                        style='display: -webkit-box;height:2.5em;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;'>
+                    </h5>
+                    <div style="display:flex;flex-direction: column-reverse;flex-wrap: wrap;justify-content: center;gap:10px">
+                        <button type="button" class="btn btn-primary" id="btn-confirm" data-bs-toggle="modal"
+                                data-bs-target="#JanelaModal">
+                            <p>Ver mais</p>
+                        </button>
+                        <div id="JanelaModal" class="modal fade">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Informações</h4>
+                                    </div>
 
+                                    <div class="modal-body">
+                                        <div> Estrada da Graciosa</div>
+                                        <div><b>Horario de funcionamento:</b> Dia todo</div>
+                                        <div><b>Link:</b> http://sitegenerico.com.br</div>
+                                        <div>
+                                            <b>Descrição</b>JAOIJSFOIASFOIASJFIOSAFIOHASOICHASIOCUHASOIDHSAIOFHASOIFHASOIFHASOICHASOIVHASOIFHASOIFHOFOASI
+                                        </div>
+                                    </div>
 
-
-      </div>
-      <div class="col">
-        <div class="card p-4" style="width: 17rem;justify-content: center;">
-          <h4 class="card-title">Estrada da Graciosa</h4>
-          <img width="10px" class="card-img-top" height="300px" style="object-fit: scale-down; " src="/Morretes.jpg"
-            alt="Card image cap">
-          <div><b>Distância:</b> 68,5 km</div>
-          <div class="card-body">
-            <h5 class="card-title"
-              style='display: -webkit-box;height:2.5em;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;'>
-            </h5>
-            <div style="display:flex;flex-direction: column-reverse;flex-wrap: wrap;justify-content: center;gap:10px">
-              <button type="button" class="btn btn-primary" id="btn-confirm" data-bs-toggle="modal"
-                data-bs-target="#JanelaModal">
-                <p>Ver mais</p>
-              </button>
-              <div id="JanelaModal" class="modal fade">
-                <div class="modal-dialog modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Informações</h4>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="modal-body">
-                      <div> Estrada da Graciosa</div>
-                      <div><b>Horario de funcionamento:</b> Dia todo</div>
-                      <div><b>Link:</b> http://sitegenerico.com.br</div>
-                      <div>
-                        <b>Descrição</b>JAOIJSFOIASFOIASJFIOSAFIOHASOICHASIOCUHASOIDHSAIOFHASOIFHASOIFHASOICHASOIVHASOIFHASOIFHOFOASI
-                      </div>
-                    </div>
-
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
 
-      </div>
+        </div>
 
     </div>
 
 
 </body>
 <script>
-  var modalConfirm = function (callback) {
+    var modalConfirm = function (callback) {
 
-    $("#btn-confirm").on("click", function () {
-      $("#mi-modal").modal('show');
-    });
+        $("#btn-confirm").on("click", function () {
+            $("#mi-modal").modal('show');
+        });
 
-    $("#modal-btn-si").on("click", function () {
-      callback(true);
-      $("#mi-modal").modal('hide');
-    });
+        $("#modal-btn-si").on("click", function () {
+            callback(true);
+            $("#mi-modal").modal('hide');
+        });
 
-    $("#modal-btn-no").on("click", function () {
-      callback(false);
-      $("#mi-modal").modal('hide');
-    });
-  };
+        $("#modal-btn-no").on("click", function () {
+            callback(false);
+            $("#mi-modal").modal('hide');
+        });
+    };
 
 </script>
 
